@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(149, 159, 249);
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Nabla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    text-shadow: 2px 2px black;
+
+}
+
+h2, p{
+    font-family: 'Poetsen One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    text-shadow: 2px 2px white;
+}
+
+p{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px white;
+}
+
+.card  img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.card{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color:hsl(36, 100%, 90%, 0.5);
+    box-shadow: 3px 3px grey;
+    border-radius: 25px;
+}
+
+.card:hover{
+    background-color: hsl(36, 100%, 90%, 0.7);
+    cursor: pointer;
+}
+
+button{
+    text-align:center;
+    margin-left: 47%;
+    margin-right: 50%;
+    margin-bottom: 50px;
+    height: 30px;
+    width: 70px;
+    text-align:center;
+    font-size: 1rem;
+    padding: 5px 5px 5px 5px;
+    background-color:hsl(34, 78%, 91%);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: oblique;
+    box-shadow: 2px 2px black;
+
+}
+
+button:hover{
+    background-color:hsl(34, 78%, 91%, 0.7);
+    cursor: pointer;
+}
+
+button:active{
+    color: white;
+    background-color: black;
+    box-shadow: 1.5px 1.5px grey;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Nabla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nabla/v10/j8_D6-LI0Lvpe7Makz5UhJt9C3uqg_X_75gyGS4jAxsNIjrRBRdeE3Z6x96OvAFr.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Poetsen One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poetsenone/v3/ke8hOgIaMUB37xCgvCntWuIoofOzEqG8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
