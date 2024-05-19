@@ -25,10 +25,18 @@ p{
     text-shadow: 1px 1px white;
 }
 
-.card  img{
+/* Card elements */
+
+.game-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.game-card img{
     width: 150px;
     height: 150px;
-    
 }
 
 .card-container{
@@ -36,12 +44,11 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-
+    perspective: 1000px;
     
 }
 
-.card{
+.game-card{
     border: 2px solid black;
     height: 200px;
     width: 200px;
@@ -50,23 +57,48 @@ p{
     background-color:hsl(36, 100%, 90%, 0.5);
     box-shadow: 3px 3px grey;
     border-radius: 25px;
-    
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+
 }
 
-.card:hover{
+.game-card:hover{
     background-color: hsl(36, 100%, 90%, 0.7);
     cursor: pointer;
 }
 
+.game-card:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.game-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-card-image, .back-card-image{
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.front-card-image{
+    transform: rotateY(180deg);
+}
+
+/* Card end */
+
 button{
     text-align:center;
-    margin-left: 47%;
+    margin-left: 50%;
     margin-right: 50%;
     margin-bottom: 50px;
-    height: 30px;
+    height: auto;
     width: 100px;
-    text-align:center;
-    font-size: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
     padding: 5px 5px 5px 5px;
     background-color:hsl(34, 78%, 91%);
     border: none;
@@ -86,6 +118,12 @@ button:active{
     color: white;
     background-color: black;
     box-shadow: 1.5px 1.5px grey;
+}
+
+.move-counter{
+    text-align: center;
+    font-family: 'Poetsen One';
+    font-size: 2rem;
 }
 
 /*Fonts*/

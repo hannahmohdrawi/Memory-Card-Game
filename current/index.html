@@ -13,68 +13,71 @@
                 <h1>Pix-a-card</h1>
                 <h2>Match all the cards to win!</h2>
             </div>
+
             <div class="card-container">
-                <div id="1" class="card">
-                    <img src="../images/dory" alt="dory" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/nemo.webp" alt="Nemo" class="front-card-image" id="nemo">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="2" class="card">
-                    <img src="../images/russel.png" alt="russel" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/nemo.webp" alt="Nemo" class="front-card-image" id="nemo">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="3" class="card">
-                    <img src="../images/russel.png" alt="russel" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/russel.png" alt="russel" class="front-card-image" id="russel">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="4" class="card">
-                    <img src="../images/mcqueen.png" alt="Sully and Mike" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/russel.png" alt="russel" class="front-card-image" id="russel">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="5" class="card">
-                    <img src="../images/overthehedge.png" alt="Over the hedge" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/mcqueen.png" alt="Sully and Mike" class="front-card-image" id="mcqueen">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="6" class="card">
-                    <img src="../images/sullymike.png" alt="Sully and Mike" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/mcqueen.png" alt="Sully and Mike" class="front-card-image" id="mcqueen">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="7" class="card">
-                    <img src="../images/dory.png" alt="Dory" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/overthehedge.png" alt="Over the hedge" class="front-card-image" id="overthehedge">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="8" class="card">
-                    <img src="../images/Sid.png" alt="Sid the Sloth" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/overthehedge.png" alt="Over the hedge" class="front-card-image" id="overthehedge">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="9" class="card">
-                    <img src="../images/sullymike.png" alt="Sully and Mike" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/sullymike.png" alt="Sully and Mike" class="front-card-image" id="sully&mike">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="10" class="card">
-                    <img src="../images/mcqueen.png" alt="Lightning McQueen" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/sullymike.png" alt="Sully and Mike" class="front-card-image" id="sully&mike">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="11" class="card">
-                    <img src="../images/lilostitch.png" alt="Lilo and Stitch" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/Sid.png" alt="Sid the Sloth" class="front-card-image" id="sid">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="12" class="card">
-                    <img src="../images/lilostitch.png" alt="Lilo and Stitch" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/Sid.png" alt="Sid the Sloth" class="front-card-image" id="sid">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="13" class="card">
-                    <img src="../images/Sid.png" alt="Sid the Sloth" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/lilostitch.png" alt="Lilo and Stitch" class="front-card-image" id="lilo&stitch">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
-        
-                <div id="14" class="card">
-                    <img src="../images/overthehedge.png" alt="Over the hedge" class="card-image">
+                <div class = "game-card">
+                    <img src="../images/lilostitch.png" alt="Lilo and Stitch" class="front-card-image" id="lilo&stitch">
+                    <img src="../images/pixar.png" alt ="Pixar logo" class="back-card-image">
                 </div>
                
             </div>
 
             <div class="user-progress-container">
-                <div class="move-counter"> Moves: 0</div>
+                <div class="move-counter"> Moves: 0</div><br>
                 <button id="restart" class="restart-button" onclick="restartGame()">Reset</button>
+                <button id="shuffle-cards" onclick = "shuffleCards()">Shuffle Cards</button>
             </div>
 
         </div>
